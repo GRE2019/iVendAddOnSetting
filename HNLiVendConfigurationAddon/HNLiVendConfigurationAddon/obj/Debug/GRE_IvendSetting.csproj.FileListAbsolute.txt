@@ -1,0 +1,11 @@
+C:\bin\Debug\HNLiVendConfigurationAddon.dll
+C:\bin\Debug\HNLiVendConfigurationAddon.pdb
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\GRE_IvendSetting.csprojAssemblyReference.cache
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.Screen.AddFieldConfiguration.resources
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.Screen.UtilPopup.resources
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\GRE_IvendSetting.csproj.GenerateResource.cache
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.dll.licenses
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\GRE_IvendSetting.csproj.CoreCompileInputs.cache
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\GRE_IvendSetting.csproj.CopyComplete
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.dll
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.pdb

@@ -220,3 +220,12 @@ C:\Users\GRE\Documents\Visual Studio 2017\Projects\AddonConfiguration\HNLiVendCo
 C:\Users\GRE\Documents\Visual Studio 2017\Projects\AddonConfiguration\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.csproj.CopyComplete
 C:\Users\GRE\Documents\Visual Studio 2017\Projects\AddonConfiguration\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.dll
 C:\Users\GRE\Documents\Visual Studio 2017\Projects\AddonConfiguration\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.pdb
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.csprojAssemblyReference.cache
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.Screen.AddFieldConfiguration.resources
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.Screen.UtilPopup.resources
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.csproj.GenerateResource.cache
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.dll.licenses
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.csproj.CoreCompileInputs.cache
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.csproj.CopyComplete
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.dll
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\HNLiVendConfigurationAddon\HNLiVendConfigurationAddon\obj\Debug\HNLiVendConfigurationAddon.pdb

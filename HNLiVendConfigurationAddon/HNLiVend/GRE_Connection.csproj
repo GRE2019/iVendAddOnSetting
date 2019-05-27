@@ -123,9 +123,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HNLCore\HNLCore.csproj">
+    <ProjectReference Include="..\HNLCore\GRE_Ivend.csproj">
       <Project>{e0901145-325e-4340-8443-6df84d2bfc20}</Project>
-      <Name>HNLCore</Name>
+      <Name>GRE_Ivend</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

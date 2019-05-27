@@ -21,29 +21,29 @@ namespace HNLiVendConfigurationAddon
 
         public override string Name
         {
-            get { return "AddOn Configuration"; }
+            get { return "AddOn Setting"; }
         }
 
         public override string CompanyName
         {
-            get { return "Hypernovalabs S.A."; }
+            get { return "Global Retail Experts"; }
         }
 
         public override string Description
         {
-            get { return "AddOn de Configuración"; }
+            get { return "AddOn para guardar datos de configuración"; }
         }
 
         public override Version VersionInfo
         {
-            get { return new Version("1.0.0.5"); }
+            get { return new Version("1.0.0.0"); }
         }
 
         public override void Start()
         {
             try
             {
-                CreateUDT("U_ConfigurationAddon", "Tabla de Configuracion",listUDFtoCreate());
+                CreateUDT("U_Table1", "Tabla de Configuracion");
             }
             catch (Exception ex)
             {
@@ -53,12 +53,7 @@ namespace HNLiVendConfigurationAddon
             AppExtensibilityContext.AddConsoleMenuItem(new MenuAddOnConfiguration());
         }
 
-        public override void ShutDown()
-        {
-            
-        }
-
-        public void CreateUDT(string nameUDT, string descriptionUDT, List<UDF> listUDF)
+        public void CreateUDT(string nameUDT, string descriptionUDT, List<UDF> listUDF = null)
         {
             table_UDT = UserDefinedTableSubSystem.Instance.Load(nameUDT);
 
@@ -71,116 +66,49 @@ namespace HNLiVendConfigurationAddon
                 table_UDT.AllowImportExport = false;
             }
 
-            foreach (var udf in listUDF)
+            if (listUDF != null)
             {
-                UserDefinedField fieldUDF = table_UDT.Fields.FirstOrDefault(d => d.FieldName == udf.nameUDF);
-
-                if (fieldUDF == null)
+                foreach (var udf in listUDF)
                 {
-                    fieldUDF = table_UDT.CreateField();
+                    UserDefinedField fieldUDF = table_UDT.Fields.FirstOrDefault(d => d.FieldName == udf.nameUDF);
 
-                    fieldUDF.FieldName = udf.nameUDF;
-                    fieldUDF.Description = udf.desciptionUDF;
-                    fieldUDF.DataType = udf.UDFType;
-                    fieldUDF.DataLength = udf.lengthUDF;
-
-                    if (udf.UDFType == UserDefinedFieldDataType.ValidValues)
+                    if (fieldUDF == null)
                     {
-                        var validValueList = fieldUDF.UserDefinedFieldValidValueList;
+                        fieldUDF = table_UDT.CreateField();
 
-                        foreach (var value in udf.uDFValidValues)
+                        fieldUDF.FieldName = udf.nameUDF;
+                        fieldUDF.Description = udf.desciptionUDF;
+                        fieldUDF.DataType = udf.UDFType;
+                        fieldUDF.DataLength = udf.lengthUDF;
+
+                        if (udf.UDFType == UserDefinedFieldDataType.ValidValues)
                         {
-                            UserDefinedFieldValidValue vValue = UserDefinedFieldValidValueSubSystem.Instance.Create();
+                            var validValueList = fieldUDF.UserDefinedFieldValidValueList;
 
-                            vValue.Id = value.id;
-                            vValue.Description = vValue.Description;
+                            foreach (var value in udf.uDFValidValues)
+                            {
+                                UserDefinedFieldValidValue vValue = UserDefinedFieldValidValueSubSystem.Instance.Create();
 
-                            fieldUDF.AddValidValue(vValue);
+                                vValue.Id = value.id;
+                                vValue.Description = vValue.Description;
+
+                                fieldUDF.AddValidValue(vValue);
+                            }
                         }
+
+                        table_UDT.AddField(fieldUDF);
+
+                        CXS.Retail.BusinessLogic.UDFHelperClass.CommitUserDefinedFields(table_UDT);
                     }
 
-                    table_UDT.AddField(fieldUDF);
 
-                    CXS.Retail.BusinessLogic.UDFHelperClass.CommitUserDefinedFields(table_UDT);
                 }
-
-                
             }
         }
-
-        //public void CreateUDF(string nameUDT, string nameUDF, string desciptionUDF, UserDefinedFieldDataType UDFType, int lengthUDF)
-        //{
-        //    table_UDT = UserDefinedTableSubSystem.Instance.Load(nameUDT);
-
-        //    if (table_UDT == null)
-        //    {
-        //        UserDefinedField fieldUDF = table_UDT.CreateField();
-
-        //        fieldUDF.FieldName = nameUDF;
-        //        fieldUDF.Description = desciptionUDF;
-        //        fieldUDF.DataType = UDFType;
-        //        fieldUDF.DataLength = lengthUDF;
-        //        table_UDT.AddField(fieldUDF);
-
-        //        CXS.Retail.BusinessLogic.UDFHelperClass.CommitUserDefinedFields(table_UDT);
-        //    }
-        //}
-
-        //public void CreateUDF(string nameUDT, string nameUDF, string desciptionUDF, UserDefinedFieldDataType UDFType, List<ValidValue> validValues, int lengthUDF)
-        //{
-        //    table_UDT = UserDefinedTableSubSystem.Instance.Load(nameUDT);
-
-        //    if (table_UDT == null)
-        //    {
-        //        if (UDFType != UserDefinedFieldDataType.ValidValues)
-        //        {
-        //            UserDefinedField fieldUDF = table_UDT.CreateField();
-
-        //            fieldUDF.FieldName = nameUDF;
-        //            fieldUDF.Description = desciptionUDF;
-        //            fieldUDF.DataType = UDFType;
-        //            fieldUDF.DataLength = lengthUDF;
-        //            table_UDT.AddField(fieldUDF);
-
-        //            CXS.Retail.BusinessLogic.UDFHelperClass.CommitUserDefinedFields(table_UDT);
-        //        }
-        //        else
-        //        {
-        //            UserDefinedField fieldUDF = table_UDT.CreateField();
-
-        //            fieldUDF.FieldName = nameUDF;
-        //            fieldUDF.Description = desciptionUDF;
-        //            fieldUDF.DataType = UDFType;
-
-        //            //ExtendedBindingList<UserDefinedFieldValidValue> m_UserDefinedFieldValidValueList =  new ExtendedBindingList<UserDefinedFieldValidValue>();
-
-        //            foreach (var item in validValues)
-        //            {
-        //                UserDefinedFieldValidValue value = UserDefinedFieldValidValueSubSystem.Instance.Create();
-
-        //                value.Id = item.id;
-
-        //                value.Description = item.description;
-
-        //                // m_UserDefinedFieldValidValueList.Add(value);
-
-        //                fieldUDF.AddValidValue(value);
-        //            }
-
-        //            fieldUDF.DataLength = lengthUDF;
-
-        //            table_UDT.AddField(fieldUDF);
-
-        //            CXS.Retail.BusinessLogic.UDFHelperClass.CommitUserDefinedFields(table_UDT);
-        //        }
-        //    }
-        //}
 
         public List<UDF> listUDFtoCreate()
         {
             List<UDF> uDFs = new List<UDF>();
-
-            //item.uDFValidValues = new List<UDFValidValue>();
 
             UDF item1 = new UDF();
 

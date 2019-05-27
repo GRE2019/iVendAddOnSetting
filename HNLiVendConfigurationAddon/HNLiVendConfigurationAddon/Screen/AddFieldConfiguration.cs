@@ -67,7 +67,7 @@ namespace HNLiVendConfigurationAddon.Screen
                     }
                 }
 
-                var table_UDT = UserDefinedTableSubSystem.Instance.Load("U_ConfigurationAddon");
+                var table_UDT = UserDefinedTableSubSystem.Instance.Load("U_Table1");
 
                 if (uDTObject.UDFType != UserDefinedFieldDataType.ValidValues)
                 {

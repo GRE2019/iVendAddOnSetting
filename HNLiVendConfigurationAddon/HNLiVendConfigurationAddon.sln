@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HNLiVendConfigurationAddon", "HNLiVendConfigurationAddon\HNLiVendConfigurationAddon.csproj", "{38E865D0-00A1-4CE3-A01A-EA181588A16D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRE_IvendSetting", "HNLiVendConfigurationAddon\GRE_IvendSetting.csproj", "{38E865D0-00A1-4CE3-A01A-EA181588A16D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HNLiVend", "HNLiVend\HNLiVend.csproj", "{7D60491C-6CAB-4399-900B-0FFC30E116D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRE_Connection", "HNLiVend\GRE_Connection.csproj", "{7D60491C-6CAB-4399-900B-0FFC30E116D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HNLCore", "HNLCore\HNLCore.csproj", "{E0901145-325E-4340-8443-6DF84D2BFC20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRE_Ivend", "HNLCore\GRE_Ivend.csproj", "{E0901145-325E-4340-8443-6DF84D2BFC20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

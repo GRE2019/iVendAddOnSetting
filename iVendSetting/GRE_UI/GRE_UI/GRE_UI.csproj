@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{693430DA-E3ED-4D87-9AFE-1262144EB3D8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GRE_UI</RootNamespace>
+    <AssemblyName>GRE_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CXS.Framework.Core">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Framework.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.BarcodeReader.OPOS">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.BarcodeReader.OPOS.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.BarcodeReader.Simulated">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.BarcodeReader.Simulated.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.CashDrawer.OPOS">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.CashDrawer.OPOS.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.CashDrawer.Simulated">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.CashDrawer.Simulated.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.DatecFP300">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.DatecFP300.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.DocumentPrinter">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.DocumentPrinter.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.DocumentPrinter.Simulated">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.DocumentPrinter.Simulated.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.ElectronicInvoice">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.ElectronicInvoice.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.Epson">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.Epson.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.FiscalPrinter">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.FiscalPrinter.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.MICR.Simulated">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.MICR.Simulated.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.MSR.OPOS">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.MSR.OPOS.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.MSR.Simulated">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.MSR.Simulated.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.PoleDisplay.OPOS">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.PoleDisplay.OPOS.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.PoleDisplay.Simulated">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.PoleDisplay.Simulated.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.ReceiptPrinter.OPOS">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.ReceiptPrinter.OPOS.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.ReceiptPrinter.Simulated">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.ReceiptPrinter.Simulated.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.Scale.OPOS">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.Scale.OPOS.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.Scale.Simulated">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.Scale.Simulated.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.SignatureCapture.OPOS">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.SignatureCapture.OPOS.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Hardware.SignatureCapture.Simulated">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Hardware.SignatureCapture.Simulated.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Integration.PassAPI">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Integration.PassAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Loyalty.Service.Client">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Loyalty.Service.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.Atos">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.Atos.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.AuthorizeDotNet">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.AuthorizeDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.BSCardService">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.BSCardService.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.CaledonCard">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.CaledonCard.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.Cayan">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.Cayan.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.Commidea">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.Commidea.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.Core">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.Credomatic">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.Credomatic.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.Cyberbit">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.Cyberbit.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.DataCap">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.DataCap.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.DataCapEMV">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.DataCapEMV.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.DataCash">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.DataCash.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.DPS">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.DPS.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.eSelectPLUS">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.eSelectPLUS.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.Ficosha">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.Ficosha.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.GlobalPayments">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.GlobalPayments.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.Heartland_Swipe">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.Heartland_Swipe.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.Innervation">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.Innervation.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.Mercury">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.Mercury.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.Ogone">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.Ogone.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.PayPal">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.PayPal.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.PCEFTPOS">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.PCEFTPOS.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.Plutus">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.Plutus.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.Protx">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.Protx.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.SecurePay">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.SecurePay.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.TenderRetail">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.TenderRetail.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.TestSystem">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.TestSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Payments.Transfirst">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Payments.Transfirst.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.Commands">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.Commands.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.Core">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.Data">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.DomainObjects">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.DomainObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.Globalization">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.Integration">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.Integration.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.IO">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.Licensing">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.PassAPI">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.PassAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.Runtime">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.Security">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.Synchronization">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.Synchronization.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.UI">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.UI.TouchScreen">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.UI.TouchScreen.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.UIComponents">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.UIComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.WCF.ServiceModel">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.WCF.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.Win32">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.Win32.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Platform.Xml">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.APIIntegration">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.APIIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.ApplicationUpdate">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.ApplicationUpdate.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.BusinessLogic">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.BusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.Common">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.ConsoleLogic">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.ConsoleLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.DataTransfer">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.DataTransfer.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.DTO">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.DTO.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.Extensibility">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.Extensibility.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.ManagementUIComponents">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.ManagementUIComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.MCUpdate">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.MCUpdate.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.POSLogic">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.POSLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.Reports">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.ReportWebViewer">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.ReportWebViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.UIComponents">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.UIComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.Retail.ViewModel">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Retail.ViewModel.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.SubSystem.Printing">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.SubSystem.Printing.dll</HintPath>
+    </Reference>
+    <Reference Include="CXS.SubSystem.Scheduler">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.SubSystem.Scheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="MessageView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\MessageLibrary\MessageLibrary\MessageView\bin\Debug\MessageView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GRE_Model\GRE_Model.csproj">
+      <Project>{94d42c14-d55b-484a-8ec2-d247e6ec3c07}</Project>
+      <Name>GRE_Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

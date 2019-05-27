@@ -56,10 +56,14 @@ namespace HNLiVendConfigurationAddon.Screen
             m_Button11.Visible = true;
             m_Button11.Text = "Aceptar";
             m_Button11.Click += M_Button11_Click;
+            m_Button11.BackColor = Color.DarkSeaGreen;
+            m_Button11.ForeColor = Color.White;
 
             m_Button12.Visible = true;
             m_Button12.Text = "Cancelar";
             m_Button12.Click += M_Button12_Click;
+            m_Button11.BackColor = Color.IndianRed;
+            m_Button11.ForeColor = Color.White;
 
             dataGridView.Columns.Add("key", "Llave");
             dataGridView.Columns.Add("value", "U_AludraPortal");

@@ -47,7 +47,7 @@ namespace HNLiVend
             string result = "";
             try
             {
-                UserDefinedTable table = UDFSubSystem.Load("U_ConfigurationAddon");
+                UserDefinedTable table = UDFSubSystem.Load("U_Table1");
 
                 UDTRow row = UDTRowSubSystem.Instance.Create(table);
 
@@ -76,7 +76,7 @@ namespace HNLiVend
 
             try
             {
-                UserDefinedTable table = UDFSubSystem.Load("U_ConfigurationAddon");
+                UserDefinedTable table = UDFSubSystem.Load("U_Table1");
                 UDTRow row = UDTRowSubSystem.Instance.LoadByKey(table, configurationKey);
 
                 if (row != null)
@@ -105,7 +105,7 @@ namespace HNLiVend
 
             try
             {
-                UserDefinedTable table = UDFSubSystem.Load("U_ConfigurationAddon");
+                UserDefinedTable table = UDFSubSystem.Load("U_Table1");
                 List<UDTRow> rowList = UDTRowSubSystem.Instance.LoadList(table);
 
                 foreach (var row in rowList)
@@ -134,7 +134,7 @@ namespace HNLiVend
 
             try
             {
-                UserDefinedTable table = UDFSubSystem.Load("U_ConfigurationAddon");
+                UserDefinedTable table = UDFSubSystem.Load("U_Table1");
                 UDTRow row = UDTRowSubSystem.Instance.LoadByKey(table, configurationKey);
 
                 if (row != null)
@@ -158,7 +158,7 @@ namespace HNLiVend
         {
             long key = 0;
 
-            string query = string.Format("Select ConfigurationAddonKey from U_ConfigurationAddon");
+            string query = string.Format("Select ConfigurationAddonKey from U_Table1");
 
             IDbConnection connection = SqlConnection;
             IDbCommand dbCommand = connection.CreateCommand();
@@ -180,7 +180,7 @@ namespace HNLiVend
         {
             List<Configuration> configurationList = new List<Configuration>();
 
-            string query = string.Format("Select * from U_ConfigurationAddon");
+            string query = string.Format("Select * from U_Table1");
 
             IDbConnection connection = SqlConnection;
             IDbCommand dbCommand = connection.CreateCommand();
@@ -206,7 +206,7 @@ namespace HNLiVend
 
         public List<AddOnField> GetRowName(long configurationKey)
         {
-            string query = "Select * from CfgUserDefinedFieldDetail where UserDefinedTableKey = (Select UserDefinedTableKey from CfgUserDefinedTable where TableName = 'U_ConfigurationAddon')";
+            string query = "Select * from CfgUserDefinedFieldDetail where UserDefinedTableKey = (Select UserDefinedTableKey from CfgUserDefinedTable where TableName = 'U_Table1')";
 
             List<AddOnField> addOnFields = new List<AddOnField>();
 
@@ -292,7 +292,7 @@ namespace HNLiVend
         public string valueConfiguration(string columnName, long configurationKey)
         {
             string columnValue = "";
-            string query = string.Format("Select {0} from U_ConfigurationAddon where ConfigurationAddonKey = {1}", columnName, configurationKey);
+            string query = string.Format("Select {0} from U_Table1 where ConfigurationAddonKey = {1}", columnName, configurationKey);
 
             IDbConnection connection = SqlConnection;
             IDbCommand dbCommand = connection.CreateCommand();
@@ -323,7 +323,7 @@ namespace HNLiVend
 
             try
             {
-                UserDefinedTable table = UDFSubSystem.Load("U_ConfigurationAddon");
+                UserDefinedTable table = UDFSubSystem.Load("U_Table1");
 
                 uDTRows = UDTRowSubSystem.Instance.LoadList(table);
 

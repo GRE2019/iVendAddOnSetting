@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HNLiVendConfigurationAddon.Screen
@@ -75,7 +68,7 @@ namespace HNLiVendConfigurationAddon.Screen
                 {
                     password = txt_password.Text;
 
-                    if (password.Trim() != "ariselmandamas")
+                    if (password.Trim() != "GRE2019")
                     {
                         lbl_text.Text = "Contraseña incorrecta";
                     }

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRE_UI", "GRE_UI\GRE_UI.csproj", "{693430DA-E3ED-4D87-9AFE-1262144EB3D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRE_Model", "GRE_Model\GRE_Model.csproj", "{94D42C14-D55B-484A-8EC2-D247E6EC3C07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{693430DA-E3ED-4D87-9AFE-1262144EB3D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{693430DA-E3ED-4D87-9AFE-1262144EB3D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{693430DA-E3ED-4D87-9AFE-1262144EB3D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{693430DA-E3ED-4D87-9AFE-1262144EB3D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94D42C14-D55B-484A-8EC2-D247E6EC3C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94D42C14-D55B-484A-8EC2-D247E6EC3C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94D42C14-D55B-484A-8EC2-D247E6EC3C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94D42C14-D55B-484A-8EC2-D247E6EC3C07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C98F50E5-70F8-4D78-AD68-7EE58D9B57A8}
+	EndGlobalSection
+EndGlobal
