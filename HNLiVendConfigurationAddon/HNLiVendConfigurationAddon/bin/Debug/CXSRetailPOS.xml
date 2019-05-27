@@ -1,0 +1,33 @@
+<Configuration>
+  <NHibernateConfiguration>
+    <connectionprovider>NHibernate.Connection.DriverConnectionProvider</connectionprovider>
+    <dialect>NHibernate.Dialect.MsSql2005Dialect</dialect>
+    <driverclass>NHibernate.Driver.SqlClientDriver</driverclass>
+    <showsql>true</showsql>
+    <connectionstring>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6xEUS+Pf7kWKWA8sJ67uDQQAAAACAAAAAAAQZgAAAAEAACAAAABgfmmTH97hxram+u+Dd1etvNHOXDf7jjDKAl/VZ7TpgwAAAAAOgAAAAAIAACAAAACVQYWinmyZawhsmLxDUJPL8+2PGWJirHvW8v6L7Y4XsmABAAAyw9eiVbhSBI/g81eVJBlwIW/VJ6wVu/cxYvOsh1hPprsVEmXIdmq03ZSL2WNnr48/xQlf5uTbs39gAOSksxatR6EuloHzHqUVSutnkNMhXTPJUzKtHJzb2Ghgh55WjewXpLdrjFMTxNHEQ9fYtY4LrSVD+illj/1X/0jH5LlkBoKnIp5MM6BjW9RHTglnXUTSVi1WrMrzRIbq/BLU+Ry99Uh7Fuhgc7UvdEbjzrF+MzGdvcs6oXvTGRb5cswshotkdIPMA4qVNsV0tubKBhyE2iWeHW862YnYgegPxH4Fq5rtam7LL8EigKDiEK+jReeudmMZ5yoecu63wTQDl38CDVnX5XVw73wkcZiI+j11yRRIVVf8gxnWyeBUXTkvjtINsKLN2r5rGqhPKWduB/DrBwgvpU4pw+oI3RZf55KRaMgn0WCSsQZTjP17Yo0SiLe9sL8PlUVdw0RS30b5OVxsQAAAAMECi3tV+24i3q9CheP/viUESFqHRihadlMPDSHzEwXsNPpJUtcNKPtvBj6iMNU74JvMFd4fhSEshZKh89jndGw=</connectionstring>
+  </NHibernateConfiguration>
+  <ViewManagerConfiguration>
+    <ShowExtendedErrorInformation>true</ShowExtendedErrorInformation>
+    <ShowStackTrace>true</ShowStackTrace>
+  </ViewManagerConfiguration>
+  <LoyaltyConfiguration>
+    <ServiceIP Value="" />
+    <ServiceHostedWithName Value="" />
+    <ServiceNameSpace Value="" />
+  </LoyaltyConfiguration>
+  <ApplicationSettings>
+    <CloudHosting>false</CloudHosting>
+    <IsiVendCloud>false</IsiVendCloud>
+    <CloudAddress>
+    </CloudAddress>
+  </ApplicationSettings>
+  <SendInformation>true</SendInformation>
+  <IsOfflinePOS>false</IsOfflinePOS>
+  <SyncBatchSize>2000</SyncBatchSize>
+  <SyncPendingRecordWarning>15000</SyncPendingRecordWarning>
+  <SyncPendingRecordLoginResctict>25000</SyncPendingRecordLoginResctict>
+  <ShowDatabaseSelection>False</ShowDatabaseSelection>
+  <SharedFolder>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6xEUS+Pf7kWKWA8sJ67uDQQAAAACAAAAAAAQZgAAAAEAACAAAAA2fC9QDZXwluz0hIGmnKkPZwUqAdZflUNLnrWA0wO6IQAAAAAOgAAAAAIAACAAAAAOeKXa+QC9u9kP1388FiIY05MMXpoo2eUmN/n2Xo60GTAAAADFr1jPdqcTpJtxhaaNY/2fccxCG4YT4O1sz3Q6qU9Qv20eNlP7Mu3URRNEuV8iijJAAAAASXArm5sf5aCXkkrHhd6x7qBo8Kwb+CKnmFDUwgcjbTHFd+VZFtekiJ6UaiEf8+NRePn7sCrPmPVzfXeE6pzoKQ==</SharedFolder>
+  <OfflineUpdates />
+  <CloudHosting>False</CloudHosting>
+</Configuration>

@@ -1,0 +1,55 @@
+<EFTNET>
+	<COM>
+		<PortNumber>9</PortNumber>
+		<BaudRate>9600</BaudRate>
+		<Parity>None</Parity>
+		<StopBits>1</StopBits>
+		<DataBits>8</DataBits>
+	</COM>
+	<Logging>
+		<Level>3</Level>
+		<Path>C:\EFTNETTRC</Path>
+		<RemoveFiles>180</RemoveFiles>
+		<TinaPath>C:\EFTNETTRCTINA</TinaPath>
+		<RemoveTinaFiles>60</RemoveTinaFiles>
+	</Logging>
+	<Timers>
+		<Execute>90</Execute> <!-- default 90 -->
+		<Cancel>90</Cancel> <!-- default 90 -->
+		<vic_to>30</vic_to>
+		<ExecCancel>15</ExecCancel>
+	</Timers>
+	<Protocol>
+		<Name>NewVic</Name>
+		<Version>010711</Version>
+	</Protocol>
+	<MachineType>
+		<Version>000000</Version>
+	</MachineType>
+	<Customer>
+		<OKNeeded>1</OKNeeded>
+		<MaskCardID>1</MaskCardID>
+	</Customer>
+	<Printer>
+		<Encoding>ASCII</Encoding>
+		<LineFeed>0A</LineFeed>
+		<DoubleOff>14</DoubleOff>
+		<DoubleWidthOn>0E</DoubleWidthOn>
+		<CarriageReturn>0D</CarriageReturn>
+		<FormFeed>0C</FormFeed>
+		<DoubleHeightOn>04</DoubleHeightOn>
+		<DoubleWidthHeightOn>0E04</DoubleWidthHeightOn>
+		<Euro>80</Euro>
+	</Printer>
+	<DisplayData>
+		<Encoding>Unicode</Encoding>
+		<LineFeed>0A</LineFeed>
+		<Euro>80</Euro>
+	</DisplayData>
+	<Dummy>
+		<!-- NOTE: turn the dummy mode on/off by using the DummyMode property from the EFT object -->
+		<!--       if the value of "ConfigFile" is empty or does not exist, DummyMode cannot be enabled. -->
+		<OnAtStartup>0</OnAtStartup>
+		<ConfigFile>E:\Atos\Latest Docs\EFT.NET\Dummy.xml</ConfigFile>
+	</Dummy>
+</EFTNET>
