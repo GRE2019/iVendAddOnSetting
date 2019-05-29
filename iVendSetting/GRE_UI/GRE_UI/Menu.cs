@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MessageView;
+using GRE_UI.Views;
+using System.Windows.Forms;
 
 namespace GRE_UI
 {
@@ -25,8 +27,19 @@ namespace GRE_UI
 
         public override void Execute()
         {
-            MessageScreenView messageScreenView = new MessageScreenView(MessageType.SUCCESS, "Iniciando Addon de Configuración.");
-            messageScreenView.Show();
+            MessageScreenView messageScreenView = new MessageScreenView(MessageType.SUCCESS, "Iniciando Addon de Configuración...");
+            messageScreenView.ShowDialog();
+
+            if (messageScreenView.DialogResult == DialogResult.OK)
+            {
+                SettingListView settingListView = new SettingListView();
+                ConsoleViewManager.Instance.Push(settingListView, true);
+            }
+            else
+            {
+                MessageScreenView messageScreenView2 = new MessageScreenView(MessageType.ERROR, "AddOn de Configuración no iniciado.");
+                messageScreenView2.Show();
+            }
         }
     }
 }

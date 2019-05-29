@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRE_UI", "GRE_UI\GRE_UI.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRE_Model", "GRE_Model\GRE_Model.csproj", "{94D42C14-D55B-484A-8EC2-D247E6EC3C07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRE_Connection", "GRE_Connection\GRE_Connection.csproj", "{E8769190-B2D9-4678-B96C-3CF0F481005F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{94D42C14-D55B-484A-8EC2-D247E6EC3C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94D42C14-D55B-484A-8EC2-D247E6EC3C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94D42C14-D55B-484A-8EC2-D247E6EC3C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8769190-B2D9-4678-B96C-3CF0F481005F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8769190-B2D9-4678-B96C-3CF0F481005F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8769190-B2D9-4678-B96C-3CF0F481005F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8769190-B2D9-4678-B96C-3CF0F481005F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{94D42C14-D55B-484A-8EC2-D247E6EC3C07}</ProjectGuid>
+    <ProjectGuid>{E8769190-B2D9-4678-B96C-3CF0F481005F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GRE_Model</RootNamespace>
-    <AssemblyName>GRE_Model</AssemblyName>
+    <RootNamespace>GRE_Connection</RootNamespace>
+    <AssemblyName>GRE_Connection</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -34,6 +34,12 @@
     <Reference Include="CXS.Framework.Core">
       <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Framework.Core.dll</HintPath>
     </Reference>
+    <Reference Include="CXS.Platform.Data">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.Platform.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\NHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,11 +50,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddOnField.cs" />
-    <Compile Include="Configuration.cs" />
+    <Compile Include="Connection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UDF.cs" />
-    <Compile Include="ValidValue.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GRE_Model\GRE_Model.csproj">
+      <Project>{94d42c14-d55b-484a-8ec2-d247e6ec3c07}</Project>
+      <Name>GRE_Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

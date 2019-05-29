@@ -298,12 +298,15 @@
     <Reference Include="CXS.SubSystem.Scheduler">
       <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\CitiXsys\iVend Retail\PointOfSale\CXS.SubSystem.Scheduler.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="MessageView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\MessageLibrary\MessageLibrary\MessageView\bin\Debug\MessageView.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -316,8 +319,24 @@
     <Compile Include="Base.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\SettingListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SettingListView.Designer.cs">
+      <DependentUpon>SettingListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SettingView.Designer.cs">
+      <DependentUpon>SettingView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GRE_Connection\GRE_Connection.csproj">
+      <Project>{E8769190-B2D9-4678-B96C-3CF0F481005F}</Project>
+      <Name>GRE_Connection</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GRE_Model\GRE_Model.csproj">
       <Project>{94d42c14-d55b-484a-8ec2-d247e6ec3c07}</Project>
       <Name>GRE_Model</Name>

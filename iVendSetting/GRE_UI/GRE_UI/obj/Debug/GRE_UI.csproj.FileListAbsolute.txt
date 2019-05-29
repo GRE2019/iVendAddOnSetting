@@ -92,9 +92,7 @@ C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSettin
 C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSetting\GRE_UI\GRE_UI\bin\Debug\GRE_Model.dll
 C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSetting\GRE_UI\GRE_UI\bin\Debug\MessageView.dll
 C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSetting\GRE_UI\GRE_UI\bin\Debug\NHibernate.dll
-C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSetting\GRE_UI\GRE_UI\bin\Debug\DevExpress.XtraEditors.v15.2.dll
 C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSetting\GRE_UI\GRE_UI\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.dll
-C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSetting\GRE_UI\GRE_UI\bin\Debug\DevExpress.Utils.v15.2.dll
 C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSetting\GRE_UI\GRE_UI\bin\Debug\DevExpress.Data.v15.2.dll
 C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSetting\GRE_UI\GRE_UI\bin\Debug\Interop.OposScanner_1_11_Lib.dll
 C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSetting\GRE_UI\GRE_UI\bin\Debug\Interop.OposCashDrawer_1_11_Lib.dll
@@ -217,3 +215,5 @@ C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSettin
 C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSetting\GRE_UI\GRE_UI\obj\Debug\GRE_UI.csproj.CopyComplete
 C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSetting\GRE_UI\GRE_UI\obj\Debug\GRE_UI.dll
 C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSetting\GRE_UI\GRE_UI\obj\Debug\GRE_UI.pdb
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSetting\GRE_UI\GRE_UI\bin\Debug\GRE_Connection.dll
+C:\Users\GRE\Documents\Visual Studio 2019\Projects\iVendAddOnSetting\iVendSetting\GRE_UI\GRE_UI\bin\Debug\GRE_Connection.pdb

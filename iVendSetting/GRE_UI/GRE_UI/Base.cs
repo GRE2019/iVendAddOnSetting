@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CXS.Framework.Core;
 using CXS.Retail.Extensibility;
 using GRE_Model;
+using MessageView;
 
 namespace GRE_UI
 {
@@ -24,8 +25,16 @@ namespace GRE_UI
 
         public override void Start()
         {
-
-            AppExtensibilityContext.AddConsoleMenuItem(new Menu());
+            try
+            {
+                CreateUDT("U_Table1", "Tabla de Configuracion");
+                AppExtensibilityContext.AddConsoleMenuItem(new Menu());
+            }
+            catch (Exception ex)
+            {
+                MessageScreenView messageScreenView = new MessageScreenView(MessageType.ERROR,"No se puede iniciar AddOn porque faltan datos de configuración.");
+                messageScreenView.Show();
+            }
         }
 
         public void CreateUDT(string nameUDT, string descriptionUDT, List<UDF> listUDF = null)
@@ -78,6 +87,10 @@ namespace GRE_UI
 
 
                 }
+            }
+            else
+            {
+                CXS.Retail.BusinessLogic.UDFHelperClass.CommitUserDefinedFields(table_UDT);
             }
         }
     }
